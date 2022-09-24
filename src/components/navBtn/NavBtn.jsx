@@ -10,23 +10,23 @@ const NavBtn = () => {
     const dispatch = useDispatch()
     const users = useSelector(state => state.addedUsers.user)
 
-    console.log(users);
+
     const isAuthorization = () => {
         const token = localStorage.getItem("user");
         token ? setAuthorization(true) : setAuthorization(false);
     }
+
     return (
         <>
             <nav className={s.btn_nav}>
                 <NavLink to={authorization ? '/lost' : '/'} >
-                    <button className={s.btn} onClick={() => isAuthorization()}><span>Found</span></button>
+                    <button className={s.btn} onClick={() => isAuthorization()}><span>Lost</span></button>
                 </NavLink>
                 <NavLink to={authorization ? '/found' : '/'} >
                     <button className={s.btn} onClick={() => isAuthorization()}><span>Found</span></button>
                 </NavLink>
-                <button onClick={() => dispatch(RequestUsers())}>request</button>
+                {/* <button onClick={() => dispatch(RequestUsers())}>request</button> */}
             </nav>
-            
         </>
     );
 };
