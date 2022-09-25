@@ -28,7 +28,7 @@ const sidebar = [
     path: '/'
   }, {
       name: "Found",
-      path: "/found",
+      path: "/foundItem",
   }, {
       name: "Personal Information",
       path: "/personnaiInfo",

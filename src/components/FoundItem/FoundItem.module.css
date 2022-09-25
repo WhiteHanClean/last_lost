@@ -1,0 +1,51 @@
+.found {
+  max-width: max-content;
+  height: max-content;
+  background-color: white;
+  padding: 20px;
+  margin: 10px auto;
+  color: white;
+  /* background-color: #f5f5dc; */
+ background: linear-gradient(to right, #FF4B2B, #FF416C);
+  border: 1px solid black
+}
+
+.found__cont {
+  margin-top: -10px;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  max-height: 100%;
+  /* background: #FF416C;
+  background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+  background: linear-gradient(to right, #FF4B2B, #FF416C); */
+  background-color: #f5f5dc;
+}
+
+.found__select {
+  color: black;
+  background-color: #f5f5dc;
+  border-color: #fff;
+  outline-color: #fff;
+  box-shadow: 5px 5px 5px rgb(59, 59, 59);
+  border-radius: 15px;
+  padding: 4px 8px;
+  width: 300px;
+  box-sizing: border-box;
+  margin-left: 15px;
+}
+
+.found__btn {
+  background-color: white;
+  margin: 0 auto;
+  display: block;
+}
+
+.found__btn_c {
+
+  margin: 20px auto;
+  display: block;
+  background-color: white;
+  border-radius: 15px;
+  padding: 4px 8px;
+}

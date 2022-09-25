@@ -4,7 +4,7 @@ import Intro from './pages/intro';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Intro/>
     </div>
   );
