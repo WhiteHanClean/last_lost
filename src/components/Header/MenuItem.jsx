@@ -1,6 +1,8 @@
 import  React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import style from './Header.module.css'
+
 
 
 const variants = {
@@ -22,14 +24,17 @@ const variants = {
 
 const sidebar = [
   {
-      name: "Lost and Found Portal",
+    name: "Home",
+    path: '/'
+  }, {
+      name: "Found",
       path: "/found",
   }, {
       name: "Personal Information",
       path: "/personnaiInfo",
   }, {
       name: "FoundItem",
-      path: "/foundItem",
+      path: '/foundItem',
   }, {
       name: "Lost Item",
       path: "/lostItem",
@@ -45,9 +50,9 @@ export const MenuItem = ({ i }) => {
       {
       sidebar.map((item, index) => 
       
-      <Link to={item.path} key={index}><motion.li variants={variants}
+      <NavLink to={item.path} key={index}><motion.li variants={variants}
       whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}>{item.name}</motion.li></Link>
+      whileTap={{ scale: 0.95 }}>{item.name}</motion.li></NavLink>
       
       )
     }

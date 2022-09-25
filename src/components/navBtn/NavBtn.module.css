@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-button{
+#button{
     width: 130px;
     height: 40px;
     color: #fff;
@@ -33,7 +33,7 @@ button{
     line-height: 42px;
     padding: 0;
     border: none;
-    
+    margin: 20px;
 }
 .btn span {
     position: relative;
@@ -95,9 +95,6 @@ box-shadow: none;
     width: 100%;
 }
 
-button {
-    margin: 20px;
-}
 
 @media(min-width: 375px) {
     .btn_nav {
