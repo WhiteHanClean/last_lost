@@ -1,9 +1,13 @@
 import "./App.css";
 import AuthForm from "./pages/AuthForm";
+import React from "react";
+import './App.css';
+import Intro from './pages/intro';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <Intro/>
       <AuthForm />
     </div>
   );
