@@ -2,14 +2,15 @@ import React from 'react';
 import { useState } from 'react';
 import s from './NavBtn.module.css';
 import { NavLink } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux';
 import { RequestUsers } from '../../asyncActions/addUsers';
 
 const NavBtn = () => {
     const [authorization, setAuthorization] = useState(true);
-    const dispatch = useDispatch()
-    const users = useSelector(state => state.addedUsers.user)
+    const dispatch = useDispatch();
+    const users = useSelector(state => state.addedUsers.user);
 
+    console.log(users)
 
     const isAuthorization = () => {
         const token = localStorage.getItem("user");
@@ -30,4 +31,5 @@ const NavBtn = () => {
         </>
     );
 };
+
 export default NavBtn;
